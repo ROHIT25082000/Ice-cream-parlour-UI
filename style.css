@@ -1,0 +1,258 @@
+* {
+    margin: 0px; 
+    padding : 0px;  
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.logo-img {
+    height: 50px; 
+    width: 50px;
+    cursor: pointer;
+}  
+
+header {
+    display: flex; 
+    padding-left: 5%; 
+    padding-right: 5%;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 10vh; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.logo div {
+    margin-left: 10px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+
+nav {
+    width: 40%;
+    max-width: 100%; 
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+}
+
+nav ul {
+    margin : 0px; 
+    padding : 0px;
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+nav a {
+    text-decoration: none;
+} 
+
+main {
+    display: flex;
+    justify-content: center; 
+    height: 90vh;
+
+}
+
+.page {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left-content {
+    font-size: 42px; 
+    font-family: Montserrat, sans-serif; 
+    font-weight: 300; 
+}
+
+
+.big-eclipse {
+    position: absolute;
+    z-index: -1;
+    height: 70vh; 
+    width: 70vw;
+    right: -10%; 
+    top: 0%;
+    opacity: 0.2;
+} 
+
+footer {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 30vh;
+    background-color: #f4f4f4;
+}
+
+footer .links{ 
+    text-align: center;
+    height: 50%;
+    font-family: Montserrat, sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+footer .link:hover {
+    color:darkorange;
+}
+
+@keyframes squeeze-right {
+    0% {
+        opacity: 0;
+        transform: translateX(+80px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes squeeze-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+
+
+.ice-cream {
+    width: 25vw;
+    height: 60vh;  
+    animation: squeeze-right 1s;
+}
+
+
+.left-content h3 {
+    background: linear-gradient(to right , #1F1D36, #864879);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: squeeze-left 1s;
+}
+
+
+.left-content button {
+    padding: 10px 15px; 
+    width: 30%; 
+    margin-top: 30px;
+    background-color: #E9A6A6; 
+    color: white;
+    font-size: medium; 
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer; 
+    animation: squeeze-left 1.3s;
+}
+
+
+@media screen and (max-width : 869px){
+    
+
+
+    header {
+        display: flex; 
+        padding-left: 1%; 
+        padding-right: 1%;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between; 
+        align-items: center; 
+        height: 10vh; 
+    }
+
+
+    .logo div {
+        margin-left: 2px;
+        font-family: Montserrat, sans-serif;
+        cursor: pointer;
+    }
+
+    
+    nav {
+        width: 50%;
+        max-width: 100%; 
+        font-family: Montserrat, sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px; 
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        height: 90vh;
+
+    }
+
+    .page {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .left-content {
+        font-size: 42px; 
+        font-family: Montserrat, sans-serif; 
+        font-weight: 300; 
+    }
+
+
+    .ice-cream {
+        width: 80vw;
+        height: 60vh;  
+        animation: squeeze-right 1s;
+    }
+
+
+    .left-content h3 {
+        background: linear-gradient(to right , #1F1D36, #864879);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: squeeze-left 1s;
+    }
+
+
+    .left-content button {
+        padding: 10px 15px; 
+        width: 50%; 
+        margin-top: 30px;
+        background-color: #E9A6A6; 
+        color: white;
+        font-size: medium; 
+        border-radius: 10px; 
+        border: none;
+        cursor: pointer; 
+        animation: squeeze-left 1.3s;
+    }
+
+}
